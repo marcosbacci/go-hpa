@@ -13,4 +13,6 @@ FROM scratch
 
 COPY --from=builder /go/bin/hpa /hpa
 
+#TEste
+
 ENTRYPOINT ["/hpa"]
