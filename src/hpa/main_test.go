@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestLoop(t *testing.T) {
-	t.Run("Loop", func(t *testing.T) {
+func TestGreeting(t *testing.T) {
+	t.Run("Greeting", func(t *testing.T) {
 		request, _ := http.NewRequest(http.MethodGet, "/", nil)
 		response := httptest.NewRecorder()
 
-		loop(response, request)
+		greeting(response, request)
 
 		got := response.Body.String()
 		want := "Code.education Rocks!"
