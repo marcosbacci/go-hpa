@@ -23,7 +23,7 @@ steps:
   args:
   - '-c'
   - |
-          sed 's#img-app-deployment#gcr.io/$PROJECT_ID/app-go:$SHORT_SHA#g' deployment.yaml > deployment-new.yaml;
+          sed 's#img-app-deployment#gcr.io/$PROJECT_ID/go:$SHORT_SHA#g' deployment.yaml > deployment-new.yaml;
 
 - id: "Deploying k8s"
   name: 'gcr.io/cloud-builders/kubectl'
