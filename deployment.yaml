@@ -15,6 +15,7 @@ spec:
                        containers:
                        - name: go
                          image: img-app-deployment
+                         #image: marcosbacci/go-hpa:latest
                          ports:
                          - containerPort: 9000
 
