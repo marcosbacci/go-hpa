@@ -14,7 +14,7 @@ spec:
                spec:
                        containers:
                        - name: go
-                         image: marcosbacci/go:latest
+                         image: img-app-deployment
                          ports:
                          - containerPort: 9000
 
